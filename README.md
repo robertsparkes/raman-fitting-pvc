@@ -2,6 +2,9 @@
 A script for automatically analysing Raman spectra of PVC to determine 
 the contribution of four raw materials to the overall formulation
 
+The main script is "raman-fitting-pvc.sh". Other scripts in this repository are 
+for pre-processing the data and generating required files in the working directory.
+
 This script is a variant of "raman-fitting" (https://github.com/robertsparkes/raman-fitting), 
 developed to specifically fit Raman spectra from PVC plastic formulations
 
