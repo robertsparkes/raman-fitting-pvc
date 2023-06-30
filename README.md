@@ -26,7 +26,7 @@ The script requires the following software to run:
 The script "**prepraman.sh**" should be run before the first files in a given folder are analysed.
 This script creates folders and initiates some datafiles for the subsequent fits
 
-> $ prepraman.sh
+> $ ./prepraman.sh
 
 ### Preparing the data files
 
@@ -40,13 +40,13 @@ Proprietary .wxd files can be converted into two-column space-separated text fil
 
 The script "**csvtxt.sh**" can be used to convert comma-separated data files into space-separated text files.
 
-> $ csvtxt.sh myfile.csv
+> $ ./csvtxt.sh myfile.csv
 
 ### Script Execution
 
 The script executes from the command line, in the form
 
-> $ raman-fitting-pvc.sh [options] [input files]
+> $ ./raman-fitting-pvc.sh [options] [input files]
 
 The options are
 -q Quiet mode - graphs appear on screen but immediately disappear
@@ -59,9 +59,9 @@ from "acombinedresults.txt" and allows previously fitted files to be analysed.
 
 Example code to prepare for and then analyse all samples with "taiwan" at the start of the file name:
 
-> $ prepraman.sh
+> $ ./prepraman.sh
 > 
-> $ sparkesfitraman.sh -d -q taiwan*.txt
+> $ ./sparkesfitraman.sh -d -q taiwan*.txt
 
 ### Outputs
 
