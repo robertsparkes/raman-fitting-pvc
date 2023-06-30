@@ -26,6 +26,8 @@ The script requires the following software to run:
 The script "**prepraman.sh**" should be run before the first files in a given folder are analysed.
 This script creates folders and initiates some datafiles for the subsequent fits
 
+> $ prepraman.sh
+
 ### Preparing the data files
 
 The input is taken from a series of two-column space-separated text files. The text files should be contained 
@@ -38,10 +40,13 @@ Proprietary .wxd files can be converted into two-column space-separated text fil
 
 The script "**csvtxt.sh**" can be used to convert comma-separated data files into space-separated text files.
 
+> $ csvtxt.sh myfile.csv
+
 ### Script Execution
 
 The script executes from the command line, in the form
-$ raman-fitting-pvc.sh [options] [input files]
+
+> $ raman-fitting-pvc.sh [options] [input files]
 
 The options are
 -q Quiet mode - graphs appear on screen but immediately disappear
@@ -52,9 +57,11 @@ After analysis the results are written to a file entitled "acombinedresults.txt"
 already in this file will be ignored and not re-fitted. The "-d" option removes all results 
 from "acombinedresults.txt" and allows previously fitted files to be analysed.
 
-Example code to prepare for and then analyse all samples with "taiwan" in the file name:
-$ prepraman.sh 
-$ sparkesfitraman.sh -d -q taiwan*.txt
+Example code to prepare for and then analyse all samples with "taiwan" at the start of the file name:
+
+> $ prepraman.sh
+> 
+> $ sparkesfitraman.sh -d -q taiwan*.txt
 
 ### Outputs
 
@@ -63,7 +70,6 @@ raw spectra with overall fit superimposed and a residual shown, and the spectra 
 showing the fitted peaks after the background has been removed. 
 
 The fitting parameters are written to a summary file (acombinedresults.txt) for further analysis
-
 
 ## Advanced Operation
 
