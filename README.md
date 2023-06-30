@@ -6,7 +6,7 @@ This script is a variant of "raman-fitting" (https://github.com/robertsparkes/ra
 developed to specifically fit Raman spectra from PVC plastic formulations
 
 The main script, **raman-fitting-pvc.sh** analyses Raman spectra of a PVC mixture fitting the sample data against
-defined Voigt peaks of four standards, plus a linear background. Other scripts in this repository are 
+defined Voigt peaks of four standards, plus a background. Other scripts in this repository are 
 for pre-processing the data and generating required files in the working directory.
 
 ## Requirements
